@@ -1,0 +1,97 @@
+/* Packages Section Styles */
+.packages {
+    background-color: #CFE7E5;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  .packages h2 {
+    font-size: 4rem;
+    color: #e7ba31;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .packages-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+  }
+  
+  .package-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .package-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .package-info {
+    padding: 1.5rem;
+  }
+  
+  .package-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .package-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .package-info .price {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .book-btn {
+    background-color: #FFD700;
+    color: #4CAF50;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #7acfd8;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .packages h2 {
+      font-size: 2rem;
+    }
+  
+    .package-info h3 {
+      font-size: 1.2rem;
+    }
+  
+    .package-info p {
+      font-size: 0.9rem;
+    }
+  }
+  
